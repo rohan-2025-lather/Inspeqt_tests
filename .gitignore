@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Playwright test results and reports
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Environment variables
+.env
+
+# Log files
+logs/
+*.log
+
+# VSCode settings (optional)
+.vscode/
+
+# Dependencies and build artifacts
+package-lock.json
+dist/
+out/
+
+# MacOS system files (optional)
+.DS_Store
