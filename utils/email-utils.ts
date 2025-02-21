@@ -4,8 +4,8 @@ import { simpleParser } from 'mailparser';
 export async function fetchLatestEmail(): Promise<string | null> {
     return new Promise((resolve, reject) => {
         const imap = new Imap({
-            user: 'rohan2010lather@gmail.com',
-            password: 'blxu afgw uxoj nfhv', // Use your actual app password
+            user: process.env.IMAP_USER,
+            password: process.env.IMAP_APP_PASSWORD, // Use your actual app password
             host: 'imap.gmail.com',
             port: 993,
             tls: true,
